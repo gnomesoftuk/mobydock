@@ -1,11 +1,11 @@
-FROM python:2.7.10-slim
+FROM python:2.7-slim
 MAINTAINER Roger Watkins <roger.watkins@gnomesoft.co.uk>
 
 RUN apt-get update \
 	&& apt-get install -qq -y \
 	build-essential \
-	libpq-dev \ 
-	postgressql-client-9.4 \
+	libpq-dev \
+	postgresql-client-9.4 \
 	--fix-missing \
 	--no-install-recommends
 
